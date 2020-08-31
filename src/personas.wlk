@@ -1,7 +1,5 @@
 object lucas { }
 
-object mica { } 
-
 object olivia {
 }
 
