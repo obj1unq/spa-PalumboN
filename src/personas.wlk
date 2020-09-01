@@ -7,12 +7,16 @@ object olivia {
 		return gradoDeConcentracion
 	}
 
-	method recibeMasajes() {
+	method recibirMasajes() {
 		gradoDeConcentracion = gradoDeConcentracion + 3
 	}
 
 	method discutir() {
 		gradoDeConcentracion = gradoDeConcentracion - 1
+	}
+	
+	method darseUnBanioDeVapor() {
+		// No hace nada
 	}
 
 }
