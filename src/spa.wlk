@@ -1,8 +1,25 @@
 import personas.*
 
 object spa {
+
+	var ultimaPersona
+
 	method atender(persona) {
-		// hay que hacer que la persona reciba masajes y se dé un baño de vapor
-		// despues, agregar el premio para el que vuelve enseguida
+		// POLIMORFISMO
+		// El spa trata igual a cualquier persona sin importa cuál sea.
+		// Cada objeto entiende los siguientes mensajes y actuán como saben.
+		if (ultimaPersona == persona) {
+			self.darPremio(persona)
+		}
+		persona.recibirMasajes()
+		persona.darseUnBanioDeVapor()
+		
+		ultimaPersona = persona
 	}
+
+	method darPremio(persona) {
+		persona.recibirMasajes()
+	}
+
 }
+
